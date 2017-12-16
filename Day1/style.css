@@ -1,0 +1,13 @@
+.button{
+  height: 50px;
+  width: 100px;
+}
+.red-button {
+  color: white;
+  background-color: RED;
+}
+
+.blue-button {
+  color: white;
+  background-color: blue;
+}
