@@ -1,6 +1,6 @@
 $(() => {
-    
-  $('.answer').on('click', () => {    
+
+  $('.answer').on('click', () => {
     alert('Correct !!')
   })
 
@@ -11,5 +11,5 @@ $(() => {
       left: Math.floor(Math.random() * 90) + '%'
     })
   })
-  
+
 })
