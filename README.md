@@ -7,4 +7,4 @@
 1. [Font tag](https://www.w3schools.com/tags/tag_font.asp)
 2. [On mouseover Event](https://www.w3schools.com/jsref/event_onmouseover.asp)
 3. [CSS Layout - The position Property](https://www.w3schools.com/css/css_positioning.asp)
-4. [Random number JS](https://www.w3schools.com/js/js_random.asp)
+4. [Random number JavaScript](https://www.w3schools.com/js/js_random.asp)
