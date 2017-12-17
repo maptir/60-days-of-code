@@ -1,6 +1,7 @@
 # 60-days-of-code
 ## Day 1: 16/12/2017
 **Today's Progress**: Make a random position of button when mouseover.
+
 **Thoughts**: Learn some new knowledge and I feel very enjoy to do some coding on some basic web develop.
 
 **Link(s) to work**
@@ -8,3 +9,13 @@
 2. [On mouseover Event](https://www.w3schools.com/jsref/event_onmouseover.asp)
 3. [CSS Layout - The position Property](https://www.w3schools.com/css/css_positioning.asp)
 4. [Random number JavaScript](https://www.w3schools.com/js/js_random.asp)
+
+## Day 2: 17/12/2017
+**Today's Progress**: Create a character game that have a skill points with a skill bar.
+
+**Thoughts**: This day I learn a lot about working on bootstrap and it take me a lot of time to finish it's still new to me to finish it.
+
+**Link(s) to work**
+1. [Bootstrap Grid system](https://getbootstrap.com/docs/4.0/layout/grid/)
+2. [Bootstrap Button](https://getbootstrap.com/docs/4.0/components/buttons/)
+3. [Bootstrap Progress Bar](https://getbootstrap.com/docs/4.0/components/progress/#backgrounds)
