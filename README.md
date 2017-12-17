@@ -1,5 +1,5 @@
-#60-days-of-code
-##Day 1: 16/12/2017
+# 60-days-of-code
+## Day 1: 16/12/2017
 **Today's Progress**: Make a random position of button when mouseover.
 **Thoughts**: Learn some new knowledge and I feel very enjoy to do some coding on some basic web develop.
 
