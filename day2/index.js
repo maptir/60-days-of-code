@@ -42,7 +42,8 @@ $(() => {
     update('#def-pbar', 'def')
     update('#int-pbar', 'int')
     update('#lux-pbar', 'lux')
-    $('#sp').html(0)
+    point = 0
+    $('#sp').html(point)
   })
 
   setup('str')
