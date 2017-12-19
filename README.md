@@ -19,3 +19,11 @@
 1. [Bootstrap Grid system](https://getbootstrap.com/docs/4.0/layout/grid/)
 2. [Bootstrap Button](https://getbootstrap.com/docs/4.0/components/buttons/)
 3. [Bootstrap Progress Bar](https://getbootstrap.com/docs/4.0/components/progress/#backgrounds)
+
+## Day 3: 18/12/2017
+**Today's Progress**: Create a look-like ATOM web page by bootstrap
+
+**Thoughts**: On this day is basic exercise on bootstrap
+
+**Link(s) to work**
+1. Use from day2
