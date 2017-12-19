@@ -1,0 +1,40 @@
+.header{
+  color: white;
+}
+
+.img-background{
+  background-image: url('https://github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/hero-6f5ca4d6a52b063697c029b5e2654ff1.svg')
+                    , url('https://github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/hero-tile-60e4804d894eddd6f26dd04402365ad2.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto, 100% 55%;
+}
+
+.img-tele{
+  background-image: url('https://github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/hero-feature-button-1e5ad2c26a3a3b1adcbc91a9e30604fb.png');
+  background-size: 65% 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 15%;
+}
+
+.margin-lr{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.feature{
+  background-color: #fbf6ec;
+}
+
+.feature-icon{
+  margin: 10%;
+  width: 35%;
+  height: 35%;
+  background-color: #E24C38;
+  border-radius: 100%;
+}
+
+.footer{
+  color: #574c4f;
+}
