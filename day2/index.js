@@ -46,6 +46,11 @@ $(() => {
     $('#sp').html(point)
   })
 
+  $('#create').on('click', () => {
+    const param = $.param(scores)
+    window.location = '../day4/index.html?' + param
+  })
+
   setup('str')
   setup('def')
   setup('int')
