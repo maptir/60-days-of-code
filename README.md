@@ -35,3 +35,11 @@
 
 **Link(s) to work**
 1. [param() / decodeURIComponent()](http://api.jquery.com/jquery.param/)
+
+## Day 5: 20/12/2017
+**Today's Progress**: Make a color space for RGB, HSL, HSV color.
+
+**Thoughts**: This make me know different 3 types of color.
+
+**Link(s) to work**
+1. [Converter of RGB, HSL, HSV](https://gist.github.com/mjackson/5311256)
