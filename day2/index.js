@@ -47,7 +47,7 @@ $(() => {
   })
 
   $('#create').on('click', () => {
-    const param = $.param(scores)
+    const param = $.param(scores) + '&img=' + $('#profile').attr('src')
     window.location = '../day4/index.html?' + param
   })
 

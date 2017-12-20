@@ -1,4 +1,6 @@
 $(() => {
+  if(window.location.search == '')
+    window.location = '../day2/index.html'
   const query = decodeURIComponent(window.location.search.substring(1));
   const querySplit = query.split('&')
   const scores = {}
@@ -16,4 +18,5 @@ $(() => {
   update('#def-pbar', 'def')
   update('#int-pbar', 'int')
   update('#lux-pbar', 'lux')
+  $('#profile').attr('src', scores.img)
 })

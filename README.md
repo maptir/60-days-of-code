@@ -42,4 +42,5 @@
 **Thoughts**: This make me know different 3 types of color.
 
 **Link(s) to work**
-1. [Converter of RGB, HSL, HSV](https://gist.github.com/mjackson/5311256)
+1. [RGB, HSL](http://visnup.github.io/hsl/)
+2. [Converter of RGB, HSL, HSV](https://gist.github.com/mjackson/5311256)
