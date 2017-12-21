@@ -44,3 +44,11 @@
 **Link(s) to work**
 1. [RGB, HSL](http://visnup.github.io/hsl/)
 2. [Converter of RGB, HSL, HSV](https://gist.github.com/mjackson/5311256)
+
+## Day 6: 21/12/2017
+**Today's Progress**: Make a hangman game.
+
+**Thoughts**: This is a funny exercise for me.
+
+**Link(s) to work**
+1. No new knowledge
