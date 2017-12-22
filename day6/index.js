@@ -1,38 +1,60 @@
 $(() => {
   const dict = ['apprehensive', 'barricade', 'condition', 'dictionary', 'fragile', 'grueling', 'habitation', 'illuminate',
-                'jostle', 'kindle', 'luminous', 'materialize', 'outlandish', 'plenteous', 'question', 'restaurant',
-                'seperate', 'turtle','umbrella','versatile','weather','xray','yoyo','zepalz']
+    'jostle', 'kindle', 'luminous', 'materialize', 'outlandish', 'plenteous', 'question', 'restaurant',
+    'seperate', 'turtle', 'umbrella', 'versatile', 'weather', 'xray', 'yoyo', 'zepalz'
+  ]
+
 
   const randomWord = () => {
     let random = dict[Math.floor((Math.random() * (dict.length)))]
-    for (var i = 7; i > 0; i--) {
-      $('#used').append(`<span id="used${i}">_ </span>`)
+    for (let i = 7; i > 0; i--) {
+      $('#used').append('_ ')
     }
-    for (var i = 0; i < random.length; i++) {
+    for (let i = 0; i < random.length; i++) {
       if (random.includes(random[i]))
-        $('#answer').append(`<span class="ans${random.indexOf(random[i])}">_ </span>`)
+        $('#answer').append('_ ')
     }
     return random;
   }
 
   const word = randomWord();
-  let used = ""
+  let used = "_".repeat(word.length)
+  let answer = "_".repeat(word.length)
+  let left = 8
 
+  const updateUI = () => {
+    $('#hangman').attr('src', `picture/${left}.png`)
+    $('#left').html(left)
+    $(`#used`).html('')
+    $('#answer').html('')
+    for (let i = 0; i < answer.length; i++) {
+      $('#answer').append(answer[i] + " ")
+    }
+    for (let i = 0; i < 7; i++) {
+      $('#used').append(used[i] + " ")
+    }
+  }
+
+  console.log(word);
   $(document).on('keydown', () => {
-    var key = event.key
-    var left = $('#left').html() - 1
+    let key = String.fromCharCode(event.keyCode).toLowerCase()
 
     if (event.keyCode >= 65 && event.keyCode <= 90) {
       if (word.includes(key)) {
-        $(`.ans${word.indexOf(key)}`).html(key + ' ')
+        let newAnswer = ""
+        for (let i = 0; i < word.length; i++) {
+          if (word[i] === key) newAnswer += key
+          else newAnswer += answer[i]
+        }
+        answer = newAnswer
       } else if (!used.includes(key)) {
-        used += key
-        $('#hangman').attr('src', `picture/${left}.png`)
-        $('#left').html(left)
-        $(`#used${left}`).html(key + ' ')
+        used = used.substring(0, 8 - left) + key + used.substring((8 - left) + 1)
+        left--
       }
 
-      if (!$('#answer').html().includes('_')) {
+      updateUI(key);
+
+      if (answer === word) {
         alert(`You won!! The Word is ${word}`)
         location.reload()
       } else if (left == 0) {
@@ -41,5 +63,4 @@ $(() => {
       }
     }
   })
-
 })
