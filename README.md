@@ -21,9 +21,42 @@
 3. [Bootstrap Progress Bar](https://getbootstrap.com/docs/4.0/components/progress/#backgrounds)
 
 ## Day 3: 18/12/2017
-**Today's Progress**: Create a look-like ATOM web page by bootstrap
+**Today's Progress**: Create a look-like ATOM web page by bootstrap.
 
-**Thoughts**: On this day is basic exercise on bootstrap
+**Thoughts**: On this day is basic exercise on bootstrap.
 
 **Link(s) to work**
 1. Use from day2
+
+## Day 4: 19/12/2017
+**Today's Progress**: Make an update in day2 so it can create a character and build a new page with the stat by query parameters.
+
+**Thoughts**: Today is about new things that I see for my entire life but I didn't realize it when I play the internet.
+
+**Link(s) to work**
+1. [param() / decodeURIComponent()](http://api.jquery.com/jquery.param/)
+
+## Day 5: 20/12/2017
+**Today's Progress**: Make a color space for RGB, HSL, HSV color.
+
+**Thoughts**: This make me know different 3 types of color.
+
+**Link(s) to work**
+1. [RGB, HSL](http://visnup.github.io/hsl/)
+2. [Converter of RGB, HSL, HSV](https://gist.github.com/mjackson/5311256)
+
+## Day 6: 21/12/2017
+**Today's Progress**: Make a hangman game.
+
+**Thoughts**: This is a funny exercise for me.
+
+**Link(s) to work**
+1. No new knowledge
+
+## Day 7: 21/12/2017
+**Today's Progress**: Make a match card game.
+
+**Thoughts**: This is a funny exercise.
+
+**Link(s) to work**
+1. [Set timeout](https://www.w3schools.com/jsref/met_win_settimeout.asp)
