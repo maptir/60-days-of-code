@@ -16,11 +16,19 @@ $(() => {
         })
       })
       .done(function() {
-        console.log("success");
+        $('#alert').addClass('alert-success')
+        $('#alert').removeClass('alert-danger')
+        $('#alert').removeClass('d-none')
+        $('#text').html(`${$('#name-input').val()} has been add.`)
+        setTimeout(() => {
+          $('.alert').addClass('d-none')
+        },2000)
       })
       .fail(function(response) {
-        $('#error').html(response.responseText)
-        $('.alert').toggleClass('d-none');
+        console.log(response);
+        $('#alert').attr('alert-success', 'alert-danger')
+        $('#alert').removeClass('d-none')
+        $('#text').html(response.responseText)
       })
       .always(function() {
         console.log("complete");
