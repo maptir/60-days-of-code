@@ -60,3 +60,13 @@
 1. [Set timeout](https://www.w3schools.com/jsref/met_win_settimeout.asp)
 
 **Thoughts**: This is a funny exercise.
+
+## [Day 8: 23/12/2017](https://zepalz.github.io/60-days-of-code/day8/)
+**Today's Progress**: Create a show list product from server by ajax jquery and learn about restful API.
+
+**Link(s) to work**
+1. [jQuery AJAX](https://www.w3schools.com/jquery/ajax_ajax.asp)
+
+**Thoughts**: Today making on some data from server that my friend open it for me and its very new knownledge for me again this is really interesting.
+
+
