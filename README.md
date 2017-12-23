@@ -52,3 +52,11 @@
 
 **Link(s) to work**
 1. No new knowledge
+
+## Day 7: 21/12/2017
+**Today's Progress**: Make a match card game.
+
+**Thoughts**: This is a funny exercise.
+
+**Link(s) to work**
+1. [Set timeout](https://www.w3schools.com/jsref/met_win_settimeout.asp)
