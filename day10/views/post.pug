@@ -10,22 +10,17 @@ block content
     div.card.card-body.border.border-danger
       h4= message
       div.text-right
-        form(action= "/addliketopic" method= "post")
-          input(type="hidden" name="id" value= id)
-          button.like
-        h6= `${likes} likes.`
-      h5.text-right= `by ${user}`
+        button.like#likeTopic
+        h6#likenum-topic= `${likes} likes.`
+        h5= `by ${user}`
     hr
     h2 Comments
     each comment, index in comments
       div.card.card-body.m-2
         h4= comment.message
         div.text-right
-          form(action= "/addlikecomment" method= "post")
-            input(type="hidden" name="id" value= id)
-            input(type="hidden" name="commentid" value= index)
-            button.like
-          h6= `${comment.likes} likes.`
+          button.like(id= `likecomment${index}`)
+          h6(id= `likenum-comment${index}`)= `${comment.likes} likes.`
           h5= `By ${comment.user}`
     hr
     h2 Add Comment
@@ -37,4 +32,37 @@ block content
       br
       button.btn.btn-outline-danger.btn-block.m-2(type= "submit") COMMENT
 
+block script
+  script.
+    $(() => {  
+    let root = "http://localhost:1975"
+    $('#likeTopic').on('click', () => {
+      $.ajax({
+        url: root + "/addliketopic",
+        type: 'POST',
+        data: {
+          id: `#{id}`
+        }
+      })
+      .done(function(response){
+        $('#likenum-topic').html(`${response.like} likes.`)
+      })
+    })
     
+    for(let i = 0; i < #{comments.length}; i++){
+      $(`#likecomment${i}`).on('click', () => {
+        $.ajax({
+          url: root + "/addlikecomment",
+          type: 'POST',
+          data: {
+            id: `#{id}`,
+            commentid: `${i}`
+          }
+        })
+        .done(function(response){
+          $(`#likenum-comment${i}`).html(`${response.like} likes.`)
+        })
+      })
+    }
+
+    })

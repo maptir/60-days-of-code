@@ -11,7 +11,7 @@ app.set('view engine', 'pug')
 
 app.use(express.static(__dirname + '/publics'))
 app.use(bodyParser.json())
-app.use(bodyParser.urlencoded(() => {
+app.use(bodyParser.urlencoded({
   extended: true
 }))
 
@@ -52,12 +52,18 @@ app.post('/addcomment', (req, res) => {
 
 app.post('/addliketopic', (req, res) => {
   posts[req.body.id].likes++
-  res.redirect(`/posts/${req.body.id}`)
+  const liketopic = {
+    like: posts[req.body.id].likes
+  }
+  res.send(liketopic)
 })
 
 app.post('/addlikecomment', (req, res) => {
   posts[req.body.id].comments[req.body.commentid].likes++
-  res.redirect(`/posts/${req.body.id}`)
+  const likecomment = {
+    like: posts[req.body.id].comments[req.body.commentid].likes
+  }
+  res.send(likecomment)
 })
 
 app.get('/posts/:id', (req, res, next) => {
