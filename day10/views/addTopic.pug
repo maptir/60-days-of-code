@@ -1,0 +1,16 @@
+extends template.pug
+
+block title
+  title Add Topic
+
+block content
+  div.container.mt-5
+    h1 Add Topic
+    form(action= "/addtopic" method= "post")
+      input.m-2.input(name= "topic" placeholder= "Topic")
+      br
+      input.m-2.input(name= "user" placeholder= "Username")
+      br
+      textarea.m-2.input(name= "message" placeholder= "Your message")
+      br
+      button.btn.btn-outline-danger.btn-block.m-2(type= "submit") CREATE TOPIC

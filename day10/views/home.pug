@@ -1,0 +1,15 @@
+extends template.pug
+
+block title
+  title= title
+
+block content
+  div.container.mt-3.mb-3
+    h1.text-center= header
+    h3= message
+      each post, index in posts
+        a(href=`/posts/${index}`)
+          div.card.card-body.m-5.topic
+            h4= post.topic
+            h5.text-right= 'by ' + post.user
+    button.btn.btn-danger.btn-block.m-3(onclick = 'window.location = "/createTopic"') CREATE NEW TOPIC
